@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		460EF5FC2692D01D00FB0B65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 460EF5FA2692D01D00FB0B65 /* LaunchScreen.storyboard */; };
 		460EF6052692D3A600FB0B65 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460EF6042692D3A600FB0B65 /* RootViewController.swift */; };
 		460EF6072692D46800FB0B65 /* Coodinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460EF6062692D46800FB0B65 /* Coodinator.swift */; };
+		460EF60A2692DD6400FB0B65 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460EF6092692DD6400FB0B65 /* Article.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		460EF5FD2692D01D00FB0B65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		460EF6042692D3A600FB0B65 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		460EF6062692D46800FB0B65 /* Coodinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coodinator.swift; sourceTree = "<group>"; };
+		460EF6092692DD6400FB0B65 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		5633B719E6A3E9C90B643FE1 /* Pods-MVVMRxSwiftPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMRxSwiftPractice.debug.xcconfig"; path = "Target Support Files/Pods-MVVMRxSwiftPractice/Pods-MVVMRxSwiftPractice.debug.xcconfig"; sourceTree = "<group>"; };
 		A5ECD4975C9DA3D46378BDFF /* Pods-MVVMRxSwiftPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMRxSwiftPractice.release.xcconfig"; path = "Target Support Files/Pods-MVVMRxSwiftPractice/Pods-MVVMRxSwiftPractice.release.xcconfig"; sourceTree = "<group>"; };
 		D7FC371F992B7F5F2A64C667 /* Pods_MVVMRxSwiftPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMRxSwiftPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,7 +50,6 @@
 				5633B719E6A3E9C90B643FE1 /* Pods-MVVMRxSwiftPractice.debug.xcconfig */,
 				A5ECD4975C9DA3D46378BDFF /* Pods-MVVMRxSwiftPractice.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -73,6 +74,7 @@
 		460EF5EE2692D01C00FB0B65 /* MVVMRxSwiftPractice */ = {
 			isa = PBXGroup;
 			children = (
+				460EF6082692DD4E00FB0B65 /* Models */,
 				460EF6032692D1C300FB0B65 /* Controllers */,
 				460EF5EF2692D01C00FB0B65 /* AppDelegate.swift */,
 				460EF5F12692D01C00FB0B65 /* SceneDelegate.swift */,
@@ -90,6 +92,14 @@
 				460EF6042692D3A600FB0B65 /* RootViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		460EF6082692DD4E00FB0B65 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				460EF6092692DD6400FB0B65 /* Article.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		780BE65FB0AAE0B9DAAAE8F7 /* Frameworks */ = {
@@ -217,6 +227,7 @@
 				460EF6072692D46800FB0B65 /* Coodinator.swift in Sources */,
 				460EF5F22692D01C00FB0B65 /* SceneDelegate.swift in Sources */,
 				460EF6052692D3A600FB0B65 /* RootViewController.swift in Sources */,
+				460EF60A2692DD6400FB0B65 /* Article.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
