@@ -15,7 +15,7 @@ class Coodinator{
     }
     
     func start() {
-        let rootViewController = RootViewController()
+        let rootViewController = RootViewController(viewModel: RootViewModel(articleService:ArticleService()))
         let navigationRootController = UINavigationController(rootViewController: rootViewController)
        //지정
         window.rootViewController = navigationRootController
