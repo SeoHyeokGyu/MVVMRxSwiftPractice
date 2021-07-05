@@ -14,9 +14,9 @@ class RootViewController: UIViewController {
     let disposeBag = DisposeBag()
     let viewModel:RootViewModel
     
-    private let articles = BehaviorRelay<[Article]>(value: [])
-    var articlesObserver:Observable<[Article]>{
-        return articles.asObservable()
+    private let articleViewModel = BehaviorRelay<[ArticleViewModel]>(value: [])
+    var articleViewModelObserver:Observable<[ArticleViewModel]>{
+        return articleViewModel.asObservable()
     }
     
     init(viewModel:RootViewModel) {
@@ -42,16 +42,17 @@ class RootViewController: UIViewController {
     }
     
     func fetchArticles() {
-        self.viewModel.fetchArticles().subscribe(onNext:{
-            articles in
-            self.articles.accept(articles)
+        viewModel.fetchArticles().subscribe(onNext: { articleViewModels in
+            self.articleViewModel.accept(articleViewModels)
         }).disposed(by: disposeBag)
+
     }
     
     func subscribe() {
-        self.articlesObserver.subscribe(onNext:{articles in
-            
+        self.articleViewModelObserver.subscribe(onNext: { articles in
+            print(articles)
         }).disposed(by: disposeBag)
     }
+    
 
 }
