@@ -10,7 +10,7 @@ import Foundation
 struct ArticleViewModel {
     private let article:Article
     
-    var imageURL:String?{
+    var imageUrl:String?{
         return article.urlToImage
     }
     
@@ -19,7 +19,7 @@ struct ArticleViewModel {
     }
     
     var description:String?{
-        return article.descriptions
+        return article.description
     }
     init(article:Article){
         self.article = article

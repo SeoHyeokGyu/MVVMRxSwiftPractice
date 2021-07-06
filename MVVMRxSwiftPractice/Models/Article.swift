@@ -10,13 +10,13 @@ import Foundation
 
 struct ArticleResponse:Codable {
     let status:String
-    let totalResult:Int
+    let totalResults:Int
     let articles:[Article]
 }
 struct Article:Codable {
     let author:String?
     let title:String?
-    let descriptions:String?
+    let description:String?
     let url:String?
     let urlToImage:String?
     let publishedAt:String?

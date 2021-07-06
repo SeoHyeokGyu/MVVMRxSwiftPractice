@@ -18,6 +18,7 @@
 		460EF60D2692DEEB00FB0B65 /* ArticleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460EF60C2692DEEB00FB0B65 /* ArticleService.swift */; };
 		460EF6102692E57E00FB0B65 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460EF60F2692E57E00FB0B65 /* RootViewModel.swift */; };
 		460EF6122692F6C900FB0B65 /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460EF6112692F6C900FB0B65 /* ArticleViewModel.swift */; };
+		4652A7A926941DC200CCA5B3 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4652A7A826941DC200CCA5B3 /* ArticleCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		460EF60C2692DEEB00FB0B65 /* ArticleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleService.swift; sourceTree = "<group>"; };
 		460EF60F2692E57E00FB0B65 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		460EF6112692F6C900FB0B65 /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
+		4652A7A826941DC200CCA5B3 /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
 		5633B719E6A3E9C90B643FE1 /* Pods-MVVMRxSwiftPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMRxSwiftPractice.debug.xcconfig"; path = "Target Support Files/Pods-MVVMRxSwiftPractice/Pods-MVVMRxSwiftPractice.debug.xcconfig"; sourceTree = "<group>"; };
 		A5ECD4975C9DA3D46378BDFF /* Pods-MVVMRxSwiftPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMRxSwiftPractice.release.xcconfig"; path = "Target Support Files/Pods-MVVMRxSwiftPractice/Pods-MVVMRxSwiftPractice.release.xcconfig"; sourceTree = "<group>"; };
 		D7FC371F992B7F5F2A64C667 /* Pods_MVVMRxSwiftPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMRxSwiftPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +82,7 @@
 		460EF5EE2692D01C00FB0B65 /* MVVMRxSwiftPractice */ = {
 			isa = PBXGroup;
 			children = (
+				4652A7A726941D9900CCA5B3 /* Views */,
 				460EF60E2692E55A00FB0B65 /* ViewModels */,
 				460EF60B2692DEDB00FB0B65 /* Service */,
 				460EF6082692DD4E00FB0B65 /* Models */,
@@ -125,6 +128,14 @@
 				460EF6112692F6C900FB0B65 /* ArticleViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4652A7A726941D9900CCA5B3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4652A7A826941DC200CCA5B3 /* ArticleCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		780BE65FB0AAE0B9DAAAE8F7 /* Frameworks */ = {
@@ -253,6 +264,7 @@
 				460EF6102692E57E00FB0B65 /* RootViewModel.swift in Sources */,
 				460EF6072692D46800FB0B65 /* Coodinator.swift in Sources */,
 				460EF60D2692DEEB00FB0B65 /* ArticleService.swift in Sources */,
+				4652A7A926941DC200CCA5B3 /* ArticleCell.swift in Sources */,
 				460EF5F22692D01C00FB0B65 /* SceneDelegate.swift in Sources */,
 				460EF6052692D3A600FB0B65 /* RootViewController.swift in Sources */,
 				460EF60A2692DD6400FB0B65 /* Article.swift in Sources */,
@@ -396,6 +408,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6FHCSD8CJ5;
 				INFOPLIST_FILE = MVVMRxSwiftPractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -415,6 +428,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6FHCSD8CJ5;
 				INFOPLIST_FILE = MVVMRxSwiftPractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
